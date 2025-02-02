@@ -1,0 +1,307 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+   
+}
+
+.container {
+    width: 83%;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-top: 2rem; */
+   
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3498db;
+    width: 300px;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    padding: 5px;
+   
+    color: white;
+}
+
+
+
+/* Home Section */
+#home {
+    /* background-color: #3498db; */
+    background-color: rgb(104, 131, 215);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    /* text-align: center; */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+/* Education Section */
+#education {
+    padding: 50px 0;
+    background-color: #fff;
+    /* text-align: center; */
+}
+
+#education h2 {
+    font-size: 2.5rem;
+}
+
+#education h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    /* background-image: url("img3.jpg"); */
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Tech section */
+.tech-stack{
+    /* height: 500px; */
+    width:100%;
+    /* border: 2px solid black;
+    border-radius: 5px;    */
+
+}
+
+.tech-stack img{
+  
+    height: 200px;
+    width: 170px;
+    margin-top: 1 rem;
+    /* padding-top: 1rem; */
+    margin-bottom: 1 rem;
+  
+    padding-bottom: 1 rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    object-fit: cover;
+
+}
+
+/* .tech-stack h2{
+    height: 150px;
+    width: 150px;
+    margin-top: 1rem;
+    padding-top: 3rem;
+    border-radius: 5%;
+    background-color: black;
+    text-align: center;
+    margin:2px;
+    color: white;
+
+}
+.image {
+    display: flex;
+    justify-content: center;
+    
+} */
+
+
+.tech-stack img :hover{
+    background-color: blue;
+}
+
+/* Work section */
+.work{
+    
+    width: 100%;
+  
+}
+.work img{
+height: 200px;
+width: 275px;
+border: 1px solid black;
+border-radius: 5px;
+object-fit: cover;
+margin-left: 2rem;
+   
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+#contact button:hover {
+    background-color: #2980b9;
+}
+
+/* Social Links */
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+.social-links a:hover {
+    color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #101b23;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+}
+
